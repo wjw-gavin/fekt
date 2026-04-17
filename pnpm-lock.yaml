@@ -31,10 +31,10 @@ importers:
         version: 3.8.2
       tsdown:
         specifier: 0.21.7
-        version: 0.21.7(typescript@6.0.2)
+        version: 0.21.7(typescript@6.0.3)
       typescript:
-        specifier: ^6.0.2
-        version: 6.0.2
+        specifier: ^6.0.3
+        version: 6.0.3
       vitest:
         specifier: ^4.1.4
         version: 4.1.4(@types/node@24.12.2)(jsdom@29.0.2)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.2))
@@ -1199,8 +1199,8 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  typescript@6.0.2:
-    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2183,7 +2183,7 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  rolldown-plugin-dts@0.23.2(rolldown@1.0.0-rc.12)(typescript@6.0.2):
+  rolldown-plugin-dts@0.23.2(rolldown@1.0.0-rc.12)(typescript@6.0.3):
     dependencies:
       '@babel/generator': 8.0.0-rc.3
       '@babel/helper-validator-identifier': 8.0.0-rc.3
@@ -2197,7 +2197,7 @@ snapshots:
       picomatch: 4.0.4
       rolldown: 1.0.0-rc.12
     optionalDependencies:
-      typescript: 6.0.2
+      typescript: 6.0.3
     transitivePeerDependencies:
       - oxc-resolver
 
@@ -2319,7 +2319,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.21.7(typescript@6.0.2):
+  tsdown@0.21.7(typescript@6.0.3):
     dependencies:
       ansis: 4.2.0
       cac: 7.0.0
@@ -2330,7 +2330,7 @@ snapshots:
       obug: 2.1.1
       picomatch: 4.0.4
       rolldown: 1.0.0-rc.12
-      rolldown-plugin-dts: 0.23.2(rolldown@1.0.0-rc.12)(typescript@6.0.2)
+      rolldown-plugin-dts: 0.23.2(rolldown@1.0.0-rc.12)(typescript@6.0.3)
       semver: 7.7.4
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
@@ -2338,7 +2338,7 @@ snapshots:
       unconfig-core: 7.5.0
       unrun: 0.2.34
     optionalDependencies:
-      typescript: 6.0.2
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -2353,7 +2353,7 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  typescript@6.0.2: {}
+  typescript@6.0.3: {}
 
   unconfig-core@7.5.0:
     dependencies:
