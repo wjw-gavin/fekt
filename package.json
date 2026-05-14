@@ -13,7 +13,7 @@
     "release:tskit": "pnpm -C packages/tskit run release"
   },
   "devDependencies": {
-    "@types/node": "^24.12.2",
+    "@types/node": "^24.12.4",
     "bumpp": "^11.0.1",
     "eslint": "^10.2.1",
     "husky": "^9.1.7",
