@@ -1,6 +1,7 @@
 {
   "name": "fekt",
   "private": true,
+  "packageManager": "pnpm@11.1.2",
   "scripts": {
     "dev": "pnpm -r run dev",
     "build": "pnpm -r run build",
