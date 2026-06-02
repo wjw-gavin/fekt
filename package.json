@@ -1,7 +1,7 @@
 {
   "name": "fekt",
   "private": true,
-  "packageManager": "pnpm@11.2.2",
+  "packageManager": "pnpm@11.5.1",
   "scripts": {
     "dev": "pnpm -r run dev",
     "build": "pnpm -r run build",
@@ -31,6 +31,6 @@
     ]
   },
   "engines": {
-    "pnpm": ">= 11.2.2"
+    "pnpm": ">= 11.5.1"
   }
 }
