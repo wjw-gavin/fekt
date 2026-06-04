@@ -14,7 +14,7 @@ export function timeFrom(timestamp: Numeric, format = '') {
   if (timestamp.toString().length === 10) timestamp *= 1000
   let timer = Date.now() - timestamp
   timer = parseInt(String(timer / 1000))
-  let tips = ''
+  let tips: string
   switch (true) {
     // Less than 1 minute, return "just now"
     case timer < 60:
