@@ -20,9 +20,9 @@ export function moneyFormat(number: Numeric, decimals = 0) {
     s[0] = s[0].replace(re, `$1${sep}$2`)
   }
 
-  if ((s[1] || '').length < prec) {
-    s[1] = s[1] || ''
-    s[1] += Array.from({ length: prec - s[1].length + 1 }).join('0')
+  const decimal = s[1] || ''
+  if (decimal.length < prec) {
+    s[1] = decimal.padEnd(prec, '0')
   }
 
   return s.join(dec)
