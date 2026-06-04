@@ -4,11 +4,11 @@ import unicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 
 export default tseslint.config(
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
   {
     ignores: ['**/dist/**', '**/node_modules/**', '**/coverage/**', '**/*.d.ts']
   },
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
   {
     plugins: { unicorn },
     rules: {
