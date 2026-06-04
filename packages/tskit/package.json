@@ -36,6 +36,7 @@
     "build": "tsdown",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "prepublishOnly": "npm run build",
     "release": "bumpp --commit --push --tag && npm publish"
   }

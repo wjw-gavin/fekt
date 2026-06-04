@@ -6,6 +6,7 @@
     "dev": "pnpm -r run dev",
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
+    "test:coverage": "pnpm -r run test:coverage",
     "typecheck": "pnpm -r run typecheck",
     "clean": "pnpm store prune",
     "lint:staged": "nano-staged",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.12.4",
+    "@vitest/coverage-v8": "^4.1.7",
     "bumpp": "^11.1.0",
     "eslint": "^10.4.1",
     "husky": "^9.1.7",
