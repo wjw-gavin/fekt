@@ -13,9 +13,8 @@ export function moneyFormat(number: Numeric, decimals = 0) {
   const prec = !isFinite(+decimals) ? 0 : Math.abs(decimals)
   const sep = ','
   const dec = '.'
-  let s: string[] = []
 
-  s = (prec ? `${round(n, prec)}` : `${Math.round(n)}`).split('.')
+  const s = (prec ? `${round(n, prec)}` : `${Math.round(n)}`).split('.')
   const re = /(-?\d+)(\d{3})/
   while (re.test(s[0])) {
     s[0] = s[0].replace(re, `$1${sep}$2`)

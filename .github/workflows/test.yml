@@ -58,3 +58,24 @@ jobs:
 
       - name: Build
         run: pnpm -r run build
+
+  lint:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install pnpm
+        run: |
+          npm install -g corepack@latest --force
+          corepack enable
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.16.0'
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint

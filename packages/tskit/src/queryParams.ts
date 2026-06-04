@@ -17,7 +17,6 @@ export function queryParams(
   const _result = []
   if (!['indices', 'brackets', 'repeat', 'comma'].includes(arrayFormat))
     arrayFormat = 'brackets'
-  // eslint-disable-next-line no-restricted-syntax
   for (const key in data) {
     const value = data[key]
 
