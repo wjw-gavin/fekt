@@ -14,12 +14,8 @@ export default tseslint.config(
       globals: { ...globals.browser, ...globals.node }
     },
     rules: {
-      // TypeScript already reports undefined identifiers; the core rule produces
-      // false positives for DOM/Node globals used throughout this library.
       'no-undef': 'off',
-      // Utility signatures intentionally accept `any` for maximum flexibility.
       '@typescript-eslint/no-explicit-any': 'off',
-      // `Function` is used deliberately in the isFunction type guard.
       '@typescript-eslint/no-unsafe-function-type': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
