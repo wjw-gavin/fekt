@@ -12,7 +12,7 @@ export const has = (obj: TObject, key: string): boolean => {
   return (
     !!obj &&
     (keyParts.length > 1
-      ? has(obj[key.split('.')[0]], keyParts.slice(1).join('.'))
+      ? has(obj[keyParts[0]], keyParts.slice(1).join('.'))
       : hasOwnProperty.call(obj, key))
   )
 }

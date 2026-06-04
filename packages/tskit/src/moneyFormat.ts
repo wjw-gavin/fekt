@@ -22,8 +22,7 @@ export function moneyFormat(number: Numeric, decimals = 0) {
   }
 
   if ((s[1] || '').length < prec) {
-    s[1] = s[1] || ''
-    s[1] += Array.from({ length: prec - s[1].length + 1 }).join('0')
+    s[1] = (s[1] || '').padEnd(prec, '0')
   }
 
   return s.join(dec)
