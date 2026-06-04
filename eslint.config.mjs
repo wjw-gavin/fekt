@@ -1,6 +1,5 @@
 import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import unicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 
 export default tseslint.config(
@@ -8,12 +7,6 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   {
     ignores: ['**/dist/**', '**/node_modules/**', '**/coverage/**', '**/*.d.ts']
-  },
-  {
-    plugins: { unicorn },
-    rules: {
-      'unicorn/prefer-number-properties': 'off'
-    }
   },
   {
     files: ['**/*.ts'],
